@@ -47,9 +47,23 @@ h1{
     padding: 4rem 0;
 }
 
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
 p{
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+section{
+    padding: 10rem 0;
 }
 /* #endregion common */
 
@@ -64,12 +78,20 @@ p{
     margin: auto;
 }
 
+.row{
+    display: flex;
+}
+
 .d-flex{
     display: flex;
 }
 
 .just-between{
     justify-content: space-between;
+}
+
+.just-center{
+    justify-content: center;
 }
 
 .align-center{
@@ -88,8 +110,12 @@ p{
     width: calc((100% / 12) * 4);
 }
 
-.col-8{
-    width: calc((100% / 12) * 8);
+.mt-3r{
+    margin-top: 3rem;
+}
+
+.gap-1r{
+    gap: 3.5rem;
 }
 /* #endregion utility */
 
@@ -126,6 +152,22 @@ p{
 .top-banner img{
     float: right;
     width: 70%;
+}
+
+section label{
+    margin-right: 2rem;
+}
+
+.user-type{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    border: 1px solid lightgray;
+    padding: .75rem 0;
+}
+
+.plan-type{
+    padding: 2rem;
 }
 
 /* #endregion header */
