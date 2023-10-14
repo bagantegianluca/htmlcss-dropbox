@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
@@ -23,10 +25,32 @@
     --dropbox-black: black;
 }
 
+a{
+    color: var(--dropbox-black);
+}
+
 img{
     max-width: 100%;
 }
 
+button{
+    background: var(--dropbox-secondary);
+    color: var(--dropbox-white);
+    font-size: 1rem;
+    border: none;
+    padding: .75rem 1rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 4rem 0;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 /* #endregion common */
 
 /* #region utility */
@@ -48,6 +72,14 @@ img{
     justify-content: space-between;
 }
 
+.align-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
 .bg-primary{
     background: var(--dropbox-primary);
 }
@@ -64,7 +96,38 @@ img{
 /* #region header */
 #header{
     background: var(--dropbox-white);
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
 }
+
+#header button{
+    padding: .5rem 1rem;
+}
+
+.header-left, .left-menu, .header-right, .right-menu{
+    gap: 2rem;
+}
+
+.top-banner{
+    padding: 1rem 0;
+    padding-top: 5rem;
+}
+
+.top-banner button{
+    margin: 2rem 0;
+}
+
+.top-banner i{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.top-banner img{
+    float: right;
+    width: 70%;
+}
+
 /* #endregion header */
 
 /* #region debug */
