@@ -57,6 +57,15 @@ h3{
     font-weight: 900;
 }
 
+h4{
+    margin-bottom: .5rem;
+}
+
+h5{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 p{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -98,6 +107,10 @@ section{
     align-items: center;
 }
 
+.align-start{
+    align-items: flex-start;
+}
+
 .flex-column{
     flex-direction: column;
 }
@@ -114,8 +127,12 @@ section{
     margin-top: 3rem;
 }
 
-.gap-1r{
-    gap: 3.5rem;
+.mb-1r{
+    margin-bottom: 1rem;
+}
+
+.gap-3r{
+    gap: 3rem;
 }
 /* #endregion utility */
 
@@ -134,7 +151,9 @@ section{
 .header-left, .left-menu, .header-right, .right-menu{
     gap: 2rem;
 }
+/* #endregion header */
 
+/* #region main */
 .top-banner{
     padding: 1rem 0;
     padding-top: 5rem;
@@ -167,10 +186,54 @@ section label{
 }
 
 .plan-type{
+    border: 1px solid lightgray;
+    border-top: none;
     padding: 2rem;
+    height: 100%;   /* BUG-Ingrandisce anche colonna centrale*/
 }
 
-/* #endregion header */
+.plan-type li{
+    font-size: .9rem;
+}
+
+.price-detail{
+    color: gray;
+}
+
+.plan-type i{
+    margin-right: .5rem;
+}
+
+.plan-type button{
+    width: 100%;
+}
+
+.main-points{
+    padding: 2.5rem 0;
+}
+
+.list-item{
+    padding: .75rem 0;
+}
+
+.buy-now{
+    padding: 2rem 0;
+}
+
+.buy-now a{
+    text-decoration: underline;
+    color: var(--dropbox-secondary);
+}
+
+hr{
+    width: 20%;
+    margin-bottom: 3.5rem;
+}
+
+.plus-points i{
+    color: var(--dropbox-secondary);
+}
+/* #endregion main */
 
 /* #region debug */
 .debug #header{
