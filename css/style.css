@@ -1,0 +1,15 @@
+/* #region common */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion common */
+
+/* #region debug */
+.debug{
+    
+}
+/* #endregion debug */
