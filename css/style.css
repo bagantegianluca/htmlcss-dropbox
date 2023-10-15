@@ -129,6 +129,10 @@ hr{
     background: var(--dropbox-primary);
 }
 
+.color-d-red{
+    color: var(--dropbox-d-red);
+}
+
 .col-4{
     width: calc((100% / 12) * 4);
 }
@@ -347,6 +351,22 @@ section label{
 
 .main-customer img{
     width: 50%;
+}
+
+section:nth-of-type(4){
+    margin: 0;
+    padding: 8rem 0;
+}
+
+section:nth-of-type(4) h2{
+    margin: 0;
+}
+
+.btn-start-test{
+    color: var(--dropbox-black);
+    background: var(--dropbox-white);
+    float: right;
+    padding: .75rem 3rem;
 }
 /* #endregion main */
 
