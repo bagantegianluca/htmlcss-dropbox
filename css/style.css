@@ -74,6 +74,12 @@ p{
 section{
     padding-top: 10rem;
 }
+
+hr{
+    width: 20%;
+    margin: 2.5rem 0;
+    border-color: var(--dropbox-gray);
+}
 /* #endregion common */
 
 /* #region utility */
@@ -127,6 +133,10 @@ section{
     width: calc((100% / 12) * 4);
 }
 
+.col-6{
+    width: 50%;
+}
+
 .col-8p{
     width: calc(((100% + 10rem) / 12) * 8);
     /* BUG calcolo manuale */
@@ -154,6 +164,39 @@ section{
 
 .gap-3r{
     gap: 3rem;
+}
+
+.bg-green{
+    background: var(--dropbox-green);
+    border: 15px solid var(--dropbox-l-green);
+}
+
+.bg-d-red{
+    background: var(--dropbox-d-red);
+}
+
+.bg-l-blue{
+    background: var(--dropbox-l-blue);
+}
+
+.bg-l-red{
+    background: var(--dropbox-l-red);
+}
+
+.bg-red{
+    background: var(--dropbox-red);
+}
+
+.bg-primary{
+    background: var(--dropbox-primary);
+}
+
+.bg-d-blue{
+    background: var(--dropbox-d-blue);
+}
+
+.bg-yellow{
+    background: var(--dropbox-yellow);
 }
 /* #endregion utility */
 
@@ -238,17 +281,12 @@ section label{
 }
 
 .buy-now{
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
-.buy-now a{
+.link{
     text-decoration: underline;
     color: var(--dropbox-secondary);
-}
-
-hr{
-    width: 20%;
-    margin-bottom: 3.5rem;
 }
 
 .plus-points i{
@@ -288,6 +326,27 @@ hr{
 
 .more-operations p{
     padding: 2rem 0;
+}
+
+.customer{
+    aspect-ratio: 1;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer img{
+    filter: invert(1);
+}
+
+.main-customer{
+    padding: 3rem;
+    background: var(--dropbox-gray);
+}
+
+.main-customer img{
+    width: 50%;
 }
 /* #endregion main */
 
