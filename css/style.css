@@ -76,66 +76,6 @@ section{
 }
 /* #endregion common */
 
-/* #region utility */
-.container{
-    width: 62.5%;
-    margin: auto;
-}
-
-.container-sm{
-    width: 52%;
-    margin: auto;
-}
-
-.row{
-    display: flex;
-}
-
-.d-flex{
-    display: flex;
-}
-
-.just-between{
-    justify-content: space-between;
-}
-
-.just-center{
-    justify-content: center;
-}
-
-.align-center{
-    align-items: center;
-}
-
-.align-start{
-    align-items: flex-start;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-
-.bg-primary{
-    background: var(--dropbox-primary);
-}
-
-.col-4{
-    width: calc((100% / 12) * 4);
-}
-
-.mt-3r{
-    margin-top: 3rem;
-}
-
-.mb-1r{
-    margin-bottom: 1rem;
-}
-
-.gap-3r{
-    gap: 3rem;
-}
-/* #endregion utility */
-
 /* #region header */
 #header{
     background: var(--dropbox-white);
@@ -189,7 +129,7 @@ section label{
     border: 1px solid lightgray;
     border-top: none;
     padding: 2rem;
-    height: 100%;   /* BUG-Ingrandisce anche colonna centrale*/
+    height: 100%;
 }
 
 .plan-type li{
@@ -233,7 +173,111 @@ hr{
 .plus-points i{
     color: var(--dropbox-secondary);
 }
+
+.partner-img{
+    width: 60%;
+}
+
+.partner-text{
+    width: 40%;
+    padding: 3rem;
+}
+
+.partner-text p{
+    padding: 2rem 0;
+}
+
+.partner-text button{
+    background: none;
+    border: 1px solid var(--dropbox-black);
+    color: var(--dropbox-black);
+}
 /* #endregion main */
+
+/* #region utility */
+.container{
+    width: 62.5%;
+    margin: auto;
+}
+
+.container-sm{
+    width: 52%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.just-between{
+    justify-content: space-between;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.bg-primary{
+    background: var(--dropbox-primary);
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.col-8p{
+    width: calc(((100% + 10rem) / 12) * 8);
+    /* BUG calcolo manuale */
+}
+
+.col-12{
+    width: 100%;
+}
+
+.mt-3r{
+    margin-top: 3rem;
+}
+
+.mt-6r{
+    margin-top: 6rem;
+}
+
+.mt-9r{
+    margin-top: 9rem;
+}
+
+.mb-1r{
+    margin-bottom: 1rem;
+}
+
+.gap-3r{
+    gap: 3rem;
+}
+
+.br-n{
+    border-right: none;
+}
+
+.bl-n{
+    border-left: none;
+}
+/* #endregion utility */
 
 /* #region debug */
 .debug #header{
@@ -293,5 +337,4 @@ hr{
     height: 570px;
     background: black;
 }
-
 /* #endregion debug */
