@@ -72,9 +72,90 @@ p{
 }
 
 section{
-    padding: 10rem 0;
+    padding-top: 10rem;
 }
 /* #endregion common */
+
+/* #region utility */
+.container{
+    width: 62.5%;
+    margin: auto;
+}
+
+.container-sm{
+    width: 52%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.just-between{
+    justify-content: space-between;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.bg-primary{
+    background: var(--dropbox-primary);
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.col-8p{
+    width: calc(((100% + 10rem) / 12) * 8);
+    /* BUG calcolo manuale */
+}
+
+.col-12{
+    width: 100%;
+}
+
+.mt-3r{
+    margin-top: 3rem;
+}
+
+.mt-6r{
+    margin-top: 6rem;
+}
+
+.mt-9r{
+    margin-top: 9rem;
+}
+
+.mb-1r{
+    margin-bottom: 1rem;
+}
+
+.gap-3r{
+    gap: 3rem;
+}
+/* #endregion utility */
 
 /* #region header */
 #header{
@@ -192,92 +273,23 @@ hr{
     border: 1px solid var(--dropbox-black);
     color: var(--dropbox-black);
 }
-/* #endregion main */
 
-/* #region utility */
-.container{
-    width: 62.5%;
-    margin: auto;
-}
-
-.container-sm{
-    width: 52%;
-    margin: auto;
-}
-
-.row{
-    display: flex;
-}
-
-.d-flex{
-    display: flex;
-}
-
-.just-between{
-    justify-content: space-between;
-}
-
-.just-center{
-    justify-content: center;
-}
-
-.align-center{
-    align-items: center;
-}
-
-.align-start{
-    align-items: flex-start;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-
-.bg-primary{
-    background: var(--dropbox-primary);
-}
-
-.col-4{
-    width: calc((100% / 12) * 4);
-}
-
-.col-8p{
-    width: calc(((100% + 10rem) / 12) * 8);
-    /* BUG calcolo manuale */
-}
-
-.col-12{
-    width: 100%;
-}
-
-.mt-3r{
-    margin-top: 3rem;
-}
-
-.mt-6r{
-    margin-top: 6rem;
-}
-
-.mt-9r{
-    margin-top: 9rem;
-}
-
-.mb-1r{
-    margin-bottom: 1rem;
-}
-
-.gap-3r{
-    gap: 3rem;
-}
-
-.br-n{
+.plan-type-br-n{
     border-right: none;
 }
 
-.bl-n{
+.plan-type-bl-n{
     border-left: none;
 }
-/* #endregion utility */
+
+.more-operations .col-4{
+    width: calc(((100% - 6rem)/ 12) * 4);
+}
+
+.more-operations p{
+    padding: 2rem 0;
+}
+/* #endregion main */
 
 /* #region debug */
 .debug #header{
