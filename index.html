@@ -67,7 +67,7 @@
                 <label for="annual-inv">Fatturazione annuale</label>
                 
                 <div class="row mt-3r gap-3r">  
-                    <div class="col-4">
+                    <div class="col-4p">
                         <div class="user-type">
                             <i class="fa-solid fa-user"></i>
                             <span>Singolo</span>
@@ -108,7 +108,7 @@
                     </div>
                     <!-- 1st column -->
 
-                    <div class="col-4">
+                    <div class="col-4p">
                         <div class="user-type">
                             <i class="fa-solid fa-user"></i>
                             <span>Team</span>
@@ -161,7 +161,7 @@
                     </div>
                     <!-- 2nd column -->
 
-                    <div class="col-4">
+                    <div class="col-4p">
                         <div class="user-type">
                             <i class="fa-solid fa-user"></i>
                             <span>Azienda</span>
@@ -206,6 +206,8 @@
                     </div>
                     <!-- 3rd column -->                    
                 </div>
+
+                <!-- BUG L'altezza della seconda colonna non rispetta il padding, ma risulta più spazio sulla parte inferiore tra testo e bordo -->
              
                 <div class="row mt-6r">
                     <div class="col-12">
@@ -363,6 +365,9 @@
             </div>
         </section>
         <!-- /Section 5 -->
+
+        <!-- BUG layout instabile sotto i 1140px (oltre a comportamento diverso riquadri con bordo)-->
+
         <!-- /.container -->
     </main>
 

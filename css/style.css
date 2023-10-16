@@ -141,6 +141,10 @@ hr{
     width: calc((100% / 12) * 4);
 }
 
+.col-4p{
+    width: calc(((100% - 6rem) / 12) * 4);
+}
+
 .col-6{
     width: 50%;
 }
@@ -189,30 +193,37 @@ hr{
 
 .bg-d-red{
     background: var(--dropbox-d-red);
+    border: 15px solid var(--dropbox-d-red);
 }
 
 .bg-l-blue{
     background: var(--dropbox-l-blue);
+    border: 15px solid var(--dropbox-l-blue);
 }
 
 .bg-l-red{
     background: var(--dropbox-l-red);
+    border: 15px solid var(--dropbox-l-red);
 }
 
 .bg-red{
     background: var(--dropbox-red);
+    border: 15px solid var(--dropbox-red);
 }
 
 .bg-primary{
     background: var(--dropbox-primary);
+    border: 15px solid var(--dropbox-primary);
 }
 
 .bg-d-blue{
     background: var(--dropbox-d-blue);
+    border: 15px solid var(--dropbox-d-blue);
 }
 
 .bg-yellow{
     background: var(--dropbox-yellow);
+    border: 15px solid var(--dropbox-yellow);
 }
 /* #endregion utility */
 
@@ -357,8 +368,10 @@ section label{
 }
 
 .main-customer{
+    aspect-ratio: 1;
     padding: 3rem;
     background: var(--dropbox-gray);
+    overflow: auto;
 }
 
 .main-customer img{
@@ -487,6 +500,10 @@ section:nth-of-type(4) h2{
 
 .debug #footer{
     height: 570px;
+    background: black;
+}
+
+.debug .row{
     background: black;
 }
 /* #endregion debug */
