@@ -133,6 +133,10 @@ hr{
     color: var(--dropbox-d-red);
 }
 
+.col-1{
+    width: calc((100% / 12) * 1);
+}
+
 .col-4{
     width: calc((100% / 12) * 4);
 }
@@ -144,6 +148,10 @@ hr{
 .col-8p{
     width: calc(((100% + 10rem) / 12) * 8);
     /* BUG calcolo manuale */
+}
+
+.col-11{
+    width: calc((100% / 12) * 11);
 }
 
 .col-12{
@@ -164,6 +172,10 @@ hr{
 
 .mb-1r{
     margin-bottom: 1rem;
+}
+
+.mb-9r{
+    margin-bottom: 9rem;
 }
 
 .gap-3r{
@@ -368,6 +380,26 @@ section:nth-of-type(4) h2{
     float: right;
     padding: .75rem 3rem;
 }
+
+.bt-1{
+    border-top: 1px solid lightgray;
+}
+
+.faq-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.faq-item p{
+    padding: 2rem 0;
+    font-weight: bold;
+}
+
+.faq-item i{
+    text-align: center;
+}
+
 /* #endregion main */
 
 /* #region debug */
