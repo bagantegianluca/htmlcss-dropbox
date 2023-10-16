@@ -402,6 +402,35 @@ section:nth-of-type(4) h2{
 
 /* #endregion main */
 
+/* #region footer */
+#footer{
+    background: var(--dropbox-black);
+    color: var(--dropbox-white);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.footer-menu{
+    width: 20%;
+}
+
+.footer-menu li{
+    line-height: 2rem;
+}
+
+.lang{
+    color: gray;
+}
+
+#footer hr{
+    width: 10%;
+}
+
+#footer span{
+    padding: 0 .5rem;
+}
+/* #endregion footer */
+
 /* #region debug */
 .debug #header{
     width: 100%;
